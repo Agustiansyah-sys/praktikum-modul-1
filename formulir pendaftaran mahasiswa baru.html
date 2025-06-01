@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="background-color:#f0f8ff; margin: 20px; font-family: Arial, sans-serif;">
+
+  <!-- Logo kampus -->
+  <img src="logostitek-removebg-preview.png" alt="Logo Kampus" width="100">
+
+  <!-- Judul halaman -->
+  <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+  <!-- Formulir Pendaftaran -->
+  <form action="/submit" method="post">
+    
+    <!-- Data Pribadi -->
+    <fieldset style="margin-bottom: 15px;">
+      <legend>Data Pribadi</legend>
+
+      <!-- Nama Lengkap -->
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" placeholder="Contoh: Mira Agustiansyah" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Contoh: miraagustiansyah@gmil.com" required><br><br>
+
+      <!-- Jenis Kelamin -->
+      <label>Jenis Kelamin:</label><br>
+      <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+      <label for="pria">Pria</label><br>
+      <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required>
+      <label for="wanita">Wanita</label><br><br>
+    </fieldset>
+
+    <!-- Hobi -->
+    <fieldset style="margin-bottom: 15px;">
+      <legend>Hobi</legend>
+      <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+      <label for="membaca">Membaca</label><br>
+
+      <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+      <label for="olahraga">Olahraga</label><br>
+
+      <input type="checkbox" id="musik" name="hobi" value="Musik">
+      <label for="musik">Musik</label><br><br>
+    </fieldset>
+
+    <!-- Jurusan -->
+    <fieldset style="margin-bottom: 15px;">
+      <legend>Pilihan Jurusan</legend>
+      <label for="jurusan">Jurusan:</label><br>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Manajemen">Manajemen</option>
+        <option value="Akuntansi">Akuntansi</option>
+      </select><br><br>
+    </fieldset>
+
+    <!-- Alamat -->
+    <fieldset style="margin-bottom: 15px;">
+      <legend>Alamat</legend>
+      <label for="alamat">Alamat Lengkap:</label><br>
+      <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Contoh: Jl. Merdeka No. 123, Bandung"></textarea>
+    </fieldset>
+
+    <!-- Tombol Kirim -->
+    <input type="submit" value="Kirim" style="background-color:#0743e7; color:white; padding: 20px 40px; border:none; cursor:pointer;">
+  </form>
+
+  <!-- Link ke informasi kampus -->
+  <p style="margin-top: 20px;">
+    <a href="https://www.stitek.ac.id" target="_blank">Informasi selengkapnya tentang kampus kami</a>
+  </p>
+
+</body>
+</html>
